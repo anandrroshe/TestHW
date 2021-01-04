@@ -4,11 +4,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int num;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number:");
-        num = scanner.nextInt();
-        Main.strPrint(Main.drawNum(num));
+        String num = scanner.next();
+        int number = 0 ;
+        try {
+            number = Integer.parseInt(num);
+        } catch (NumberFormatException numberFormatException) {
+            System.out.println("NumberFormatException: " + numberFormatException.getMessage());
+        }
+
+        Main.strPrint(Main.drawNum(number));
     }
 
     private static String[] drawNum(int num){
