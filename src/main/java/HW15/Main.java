@@ -11,7 +11,7 @@ public class Main {
         try {
             number = Integer.parseInt(num);
         } catch (NumberFormatException numberFormatException) {
-            System.out.println("NumberFormatException: " + numberFormatException.getMessage());
+            System.out.println("ERROR");
         }
 
         Main.strPrint(Main.drawNum(number));
