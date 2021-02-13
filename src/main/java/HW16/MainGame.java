@@ -10,10 +10,7 @@ public class MainGame {
         int gameChoice;
         String playChoice;
         int playerScore;
-        //int [][] winnerTable = {{1,3,2}, {2, 1, 3},{3, 2, 1}};
-        int [][] winnerTable = {{0, 2, 1},
-                {1, 0, 2},
-                {2, 1, 0}};
+        int [][] winnerTable = {{0, 2, 1}, {1, 0, 2}, {2, 1, 0}};
         int tie =0;
         int gameWinCount = 0;
         int playerWinCount = 0;
