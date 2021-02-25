@@ -9,7 +9,7 @@ public class QueryManager {
     private static PreparedStatement preparedStatement;
     private static  String url = "jdbc:mysql://localhost:3306/student?";
     private static  String user = "root";
-    private static  String password = "1312hjkhjk";
+    private static  String password = "00000000";
 
 
     public QueryManager() throws SQLException {
