@@ -71,7 +71,7 @@ public class Game {
                 break;
         }
         gameWinner(player, opponent);
-        gameLog += "\n== Round ==\n"+ playerName+ "  turn ----->  "+ movePlayer +"\nComputer  turn ----->  "
+        gameLog += "\n== Result ==\n"+ playerName+ "  turn ----->  "+ movePlayer +"\nComputer  turn ----->  "
                 +moveOpponent+ "\n== Round End ==\n"+ pl + " winning this round.";
         loggerInfo.info(gameLog);
 
@@ -120,7 +120,7 @@ public class Game {
     }
 
     public static void gLog(){
-        gameLog += "\n ======ROCK PAPER SCISSORS====== \n =======Round======= \n Score of " + playerName
+        gameLog += "\n ======ROCK PAPER SCISSORS====== \n =======Result======= \n Score of " + playerName
                 + " "+ winsPlayer +"\n Score Computer: " +winsOpp;
 
 
@@ -129,7 +129,7 @@ public class Game {
     public static void wLog(String winner) {
         if (winsPlayer != 0 || winsOpp != 0) {
             gameLog += "\n======ROCK PAPER SCISSORS======\n" + playerName + " AGAINST Computer" + "\n and THE WINNER IS........\n "
-                    + winner + "\n CONGRATULATIONS!!!" + "======GAME END======\n" + playerName + "\nTOTAL WINS: " + winsPlayer
+                    + winner + "\n CONGRATULATIONS!!!" + "\n======GAME END======\n" + playerName + "\nTOTAL WINS: " + winsPlayer
                     + "\nComputer \nTOTAL WINS: " + winsOpp;
         }
         try {
