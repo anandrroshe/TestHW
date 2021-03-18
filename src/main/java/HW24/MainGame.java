@@ -41,12 +41,16 @@ public class MainGame {
         start = sc.nextBoolean();
         gameRound = Game.gameRounds();
         if (start == true) {
-            loggerDebug.info("\n======ROCK PAPER SCISSORS====== \n == " + Game.playerName + " AGAINST Computer==");
+            loggerDebug.info("\n======ROCK PAPER SCISSORS====== \n == " + Game.playerName + " AGAINST Computer ==");
             try {
                 for (int i = gameRound; i > 0; i--) {
+                    String string = "|     Round "+ i +"     |";
+                    loggerInfo.info(string);
                     int g = (int) ((Math.random() * 3));
                     Game game = new Game(g);
                     if (i==1){game.exit();}
+                    String temp = "Rounds left - "+ (i-1);
+                    loggerInfo.info(temp);
                 }
 
 
@@ -60,47 +64,6 @@ public class MainGame {
 
         }
     }
-
-
-
-//                loggerConnection.info("\n -Help-\nLanguage settings: \n1.English - EN \n2.Spanish - ES \n3.Russian - RU");
-//                Scanner sc = new Scanner(System.in);
-//                String lang = sc.next();
-//
-//                Locale.setDefault(new Locale("en"));
-//                locale = Locale.getDefault();
-//                start = true;
-
-
-
-//        if (start == true){
-//
-//            resourceBundle = ResourceBundle.getBundle("lang", locale);
-//
-//            resourceBundle.getString("name");
-//            Game.registration();
-
-//            gameRound = Game.gameRounds();
-//            System.out.println("start");
-//            loggerConnection.debug("======ROCK PAPER SCISSORS====== \n == " + Game.playerName + " AGAINST Computer==");
-//            System.out.println("start");
-//            try {
-//                while (gameRound != 0){
-//                    Game game = new Game((int)((Math.random()*3)));
-//                    loggerInfo.info(String.valueOf(game));
-//                    gameRound--;
-//                    }
-//                }catch (Exception e){
-//                loggerError.error(e.toString());
-//            }finally {
-//                Game.gLog();
-//                loggerDebug.debug(Game.playerName+" left game.");
-//
-//            }
-//
-//        }
-
-
     }
 
 
