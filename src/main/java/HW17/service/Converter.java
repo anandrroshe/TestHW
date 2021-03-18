@@ -7,9 +7,9 @@ public class Converter {
 
     private static StringBuilder stringBuilder = new StringBuilder();
     public static void convertion(String path) throws IOException {
-        TXT_FileCreator fileCreator = new TXT_FileCreator();
-        JSON_to_YAML json_to_yaml = new JSON_to_YAML();
-        YAML_to_JSON yaml_to_json = new YAML_to_JSON();
+        FileCreatorTXT fileCreator = new FileCreatorTXT();
+        Json2Yaml json_to_yaml = new Json2Yaml();
+        Yaml2Json yaml_to_json = new Yaml2Json();
 
         File file = new File(path);
         fileCreator.createDirFile(path);
